@@ -6,10 +6,12 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *this = list, *that = list->next;
+	listint_t *this, *that;
 
 	if (list == NULL)
 		return (0);
+	this = list;
+	that = list->next;
 	while (this && that)
 	{
 		if (this == that)
