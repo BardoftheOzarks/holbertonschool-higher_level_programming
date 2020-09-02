@@ -10,7 +10,7 @@ int check_cycle(listint_t *list)
 
 	while (this && that)
 	{
-		if (here == future)
+		if (this == that)
 			return (1);
 		this = this->next;
 		if (that->next != NULL)
