@@ -6,13 +6,15 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *head = list;
+	listint_t *this = list, *that = list->next;
 
-	while (list)
+	while (this && that)
 	{
-		list = list->next;
-		if (&list == &head)
+		if (here == future)
 			return (1);
+		this = this->next;
+		if (that->next != NULL)
+			that = that->next->next;
 	}
 	return (0);
 }

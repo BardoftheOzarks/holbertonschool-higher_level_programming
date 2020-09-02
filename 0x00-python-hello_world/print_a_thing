@@ -1,0 +1,2 @@
+#!/usr/bin/python3
+print('"some string with a double quote')
