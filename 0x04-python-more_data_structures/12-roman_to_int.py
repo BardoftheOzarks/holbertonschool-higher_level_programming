@@ -11,3 +11,5 @@ def roman_to_int(roman_string):
                     total -= numerals[char]
                 last = char
             return total
+    else:
+        return 0
