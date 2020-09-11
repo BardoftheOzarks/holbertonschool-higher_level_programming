@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-def mul(a, b):
-    return a*b
 def weight_average(my_list=[]):
+    score = 0
+    weight = 0
     if my_list:
         for duple in my_list:
             score += duple[0] * duple[1]
