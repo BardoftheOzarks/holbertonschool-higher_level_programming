@@ -29,14 +29,15 @@ class Square:
     def my_print(self):
         if self.__size is 0:
             print()
-        for o in range(self.__position[1]):
-            print()
-        for i in range(self.__size):
-            for spaces in range(self.__position[0]):
-                print(' ', end='')
-            for hashes in range(self.__size):
-                print('#', end='')
-            print()
+        else:
+            for o in range(self.__position[1]):
+                print()
+            for i in range(self.__size):
+                for spaces in range(self.__position[0]):
+                    print(' ', end='')
+                for hashes in range(self.__size):
+                    print('#', end='')
+                print()
 
     @size.setter
     def size(self, value):
