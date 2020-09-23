@@ -34,7 +34,9 @@ class Square:
         for i in range(self.__size):
             for spaces in range(self.__position[0]):
                 print(' ', end='')
-            print('#' * self.__size)
+            for hashes in range(self.__size):
+                print('#', end='')
+            print()
 
     @size.setter
     def size(self, value):
