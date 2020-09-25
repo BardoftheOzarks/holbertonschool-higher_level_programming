@@ -1,0 +1,38 @@
+doctest for 0-add_integer.py
+============================
+
+Using ``add_integer``
+---------------------
+
+>>> from 0-add_integer import add_integer
+
+~~~~~~~~~~~~~
+Success Cases
+~~~~~~~~~~~~~
+
+>>>add_integer(2, 2)
+4
+
+>>>add_integer(-2, -2)
+-4
+
+>>>add_integer(2, -2)
+0
+
+>>>add_integer(500, 10)
+510
+
+>>>add_integer(4.3, 5.7)
+10
+
+>>>add_integer(4.2, 5)
+9
+
+>>>add_integer(2.4)
+100
+
+
+~~~~~~~~~~
+Fail Cases
+~~~~~~~~~~
+
