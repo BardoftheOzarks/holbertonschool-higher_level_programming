@@ -50,7 +50,7 @@ class Rectangle:
 
     def __str__(self):
         sting = ''
-        if self._Rectangle__height is 0 or self._Rectangle__height is 0:
+        if self._Rectangle__width is 0:
             return sting
         for h in range(self._Rectangle__height):
             for w in range(self._Rectangle__width):
