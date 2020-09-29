@@ -57,4 +57,6 @@ class Rectangle:
                 sting += '\n'
         return sting
 
-        
+    def __repr__(self):
+        return 'Rectangle({}, {})'.format(self._Rectangle__width,
+                                          self._Rectangle__height)
