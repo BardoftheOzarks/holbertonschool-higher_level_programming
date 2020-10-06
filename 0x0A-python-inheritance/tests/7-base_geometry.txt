@@ -1,0 +1,42 @@
+doctest for 7-base_geometry.py
+==============================
+
+Load 'base_geometry'
+--------------------
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+=============
+Failure Cases
+=============
+
+>>> try:
+...     bg.integer_validator('int', True)
+... except Exception as e:
+...     print("{}: {}".format(e.__class__.__name__, e))
+TypeError: int must be an integer
+
+>>> try:
+...     bg.integer_validator('int', 2.1)
+... except Exception as e:
+...     print("{}: {}".format(e.__class__.__name__, e))
+TypeError: int must be an integer
+
+>>> try:
+...     bg.integer_validator('int', 'Holbie')
+... except Exception as e:
+...     print("{}: {}".format(e.__class__.__name__, e))
+TypeError: int must be an integer
+
+>>> try:
+...     bg.integer_validator('int', -4)
+... except Exception as e:
+...     print("{}: {}".format(e.__class__.__name__, e))
+ValueError: int must be greater than 0
+
+>>> try:
+...     bg.integer_validator('int', 0)
+... except Exception as e:
+...     print("{}: {}".format(e.__class__.__name__, e))
+ValueError: int must be greater than 0
