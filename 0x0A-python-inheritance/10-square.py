@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''Creates subsubclass Square'''
 
-
 Rectangle = __import__('9-rectangle').Rectangle
+
 
 class Square(Rectangle):
     def __init__(self, size):

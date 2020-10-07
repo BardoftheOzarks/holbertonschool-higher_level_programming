@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''Creates a subclass of BaseGeometry'''
 
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     '''subclass of BaseGeometry'''
