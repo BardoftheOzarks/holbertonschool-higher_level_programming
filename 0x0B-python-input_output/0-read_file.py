@@ -3,5 +3,5 @@
 
 
 def read_file(filename=""):
-    f = open(filename)
-    print(f.read())
+    with open(filename) as f:
+        print(f.read())
