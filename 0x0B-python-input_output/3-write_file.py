@@ -4,4 +4,5 @@
 
 def write_file(filename='', text=''):
     with open(filename, 'w') as f:
-        f.write(str(text))
+        count = f.write(str(text))
+        return count
