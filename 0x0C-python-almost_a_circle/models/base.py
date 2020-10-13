@@ -35,6 +35,6 @@ class Base:
 '''    @staticmethod
     def from_json_string(json_string):
         import json
-        
+
         if json.dumps(json_string) is None or json.dumps(json)
 '''
