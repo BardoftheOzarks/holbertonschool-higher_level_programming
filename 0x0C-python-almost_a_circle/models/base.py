@@ -29,8 +29,7 @@ class Base:
         dictionaries = []
         for obj in list_objs:
             dictionaries.append(obj.to_dictionary())
-        filename = cls.__name__ + '.json'
-        with open(filename, 'w') as f:
+        with open(cls.__name__ + '.json', 'w') as f:
             f.write(cls.to_json_string(dictionaries))
 
 '''    @staticmethod
