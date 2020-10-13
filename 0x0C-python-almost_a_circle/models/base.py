@@ -35,6 +35,8 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         '''translates json object to a string'''
+        if json_string is None:
+            return []
         import json
         string_list = json.loads(json_string)
         if string_list is None or len(string_list) == 0:
