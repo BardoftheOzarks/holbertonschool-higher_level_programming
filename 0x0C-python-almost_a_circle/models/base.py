@@ -38,7 +38,7 @@ class Base:
         import json
         string_list = json.loads(json_string)
         if string_list is None or len(string_list) == 0:
-            return '[]'
+            return []
         return string_list
 
     @classmethod
