@@ -12,7 +12,7 @@ if __name__ == '__main__':
                          db=argv[3])
     state = argv[4]
     if len(argv) == 6:
-        state = argv[4] + argv[5]
+        state = argv[4] + ' ' + argv[5]
     c = db.cursor()
     c.execute('SELECT * FROM states ORDER BY id ASC')
     rows = c.fetchall()
