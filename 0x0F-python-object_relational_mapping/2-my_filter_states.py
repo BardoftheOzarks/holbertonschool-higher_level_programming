@@ -10,9 +10,10 @@ if __name__ == '__main__':
     db = MySQLdb.connect(host=my_host, port=3306,
                          user=argv[1], passwd=argv[2],
                          db=argv[3])
-    state = argv[4]
     if len(argv) == 6:
-        state = argv[4] + ' ' + argv[5]
+        state = '{} {}'.format(argv[4], argv[5])
+    else:
+        state = argv[4]
     c = db.cursor()
     c.execute('SELECT * FROM states ORDER BY id ASC')
     rows = c.fetchall()
