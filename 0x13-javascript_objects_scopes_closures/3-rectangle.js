@@ -6,6 +6,7 @@ class Rectangle {
       this.height = h;
     }
   }
+
   print () {
     let i = 0;
     let row = '';
@@ -13,7 +14,7 @@ class Rectangle {
       row += 'X';
     }
     for (i = 0; i < this.height; i++) {
-      console.log(row)
+      console.log(row);
     }
   }
 }
