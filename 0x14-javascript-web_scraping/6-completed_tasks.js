@@ -10,9 +10,9 @@ request(url, function (err, response, body) {
     for (let i = 0; i < tasklist.length; i++) {
       if (tasklist[i].completed === true) {
         if (!(tasklist[i].userId in results)) {
-  	  results[tasklist[i].userId] = 1;
-	} else {
-	  results[tasklist[i].userId] += 1;
+          results[tasklist[i].userId] = 1;
+        } else {
+          results[tasklist[i].userId] += 1;
         }
       }
     }
