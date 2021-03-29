@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-Lists all State objects in a database
+List first State object in a database
 '''
 if __name__ == '__main__':
     from sys import argv
@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
     session = sessionmaker(bind=engine)
     Session = session()
-    for state in Session.query(State).order_by(State.id.asc()).all():
-        print("{}: {}".format(state.id, state.name))
-        break
+    state = Session.query(State).order_by(State.id.asc()).first()
+    print("{}: {}".format(state.id, state.name))
+
     Session.close()
