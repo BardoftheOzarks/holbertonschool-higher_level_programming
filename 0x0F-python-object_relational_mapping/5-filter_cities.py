@@ -18,6 +18,6 @@ if __name__ == "__main__":
         if row[1] == argv[4]:
             cities.append(row[0])
 
-    print('%s'% ', '.join(map(str, cities)))
+    print('%s' % ', '.join(map(str, cities)))
     cur.close()
     db.close()
