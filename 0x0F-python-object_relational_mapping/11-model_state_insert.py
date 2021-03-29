@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-List first State object in a database
+Adds State obj "Louisiana" to input database
 '''
 if __name__ == '__main__':
     from sys import argv
