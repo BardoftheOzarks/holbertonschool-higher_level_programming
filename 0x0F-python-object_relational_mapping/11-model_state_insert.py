@@ -16,7 +16,7 @@ if __name__ == '__main__':
     Session = session()
 
     row = State(name='Louisiana')
-    print(row.id)
     Session.add(row)
     Session.commit()
+    print(row.id)
     Session.close()
