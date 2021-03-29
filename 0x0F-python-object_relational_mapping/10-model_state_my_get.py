@@ -21,6 +21,5 @@ if __name__ == '__main__':
     if len(states) == 0:
         print('Not found')
     else:
-        for state in states:
-            print("{}".format(state.id))
+        print(states[0].id)
     Session.close()
