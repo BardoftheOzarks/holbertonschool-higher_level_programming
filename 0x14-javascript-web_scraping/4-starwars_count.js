@@ -8,8 +8,8 @@ request(process.argv[2], (err, response, body) => {
   let count = 0;
   for (let i = 0; i < data.length; i++) {
     const characters = data[i].characters;
-    for (j = 0; j < characters.length; j++) {
-      if (characters[j].includes("18")) {
+    for (let j = 0; j < characters.length; j++) {
+      if (characters[j].includes('18')) {
         count++;
       }
     }

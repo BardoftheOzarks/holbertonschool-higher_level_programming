@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const request = require('request')
+const request = require('request');
 request(process.argv[2], function (err, response, body) {
   if (err) {
     console.log(err);
@@ -13,6 +13,6 @@ request(process.argv[2], function (err, response, body) {
         completed[task.userId] += 1;
       }
     }
-  console.log(completed);
+    console.log(completed);
   }
 });
